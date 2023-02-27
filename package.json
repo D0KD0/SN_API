@@ -1,0 +1,19 @@
+{
+  "name": "sn_api",
+  "version": "0.1.0",
+  "description": "This is an API for social network web application where users can share their thoughts, react to friends' thoughts, and create a friend list.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D0KD0/SN_API.git"
+  },
+  "author": "D0KD0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/D0KD0/SN_API/issues"
+  },
+  "homepage": "https://github.com/D0KD0/SN_API#readme"
+}
