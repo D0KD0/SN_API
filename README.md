@@ -9,7 +9,7 @@ Walkthrough video can be checked from the following link:
 ## Instruction
 Follow following process after download this repo:
 1. npm i
-2. node indes.js
+2. npm start
 3. Run Insomnia to test GET, POST, PUT, DELETE routes
 
 ## Softwares used
