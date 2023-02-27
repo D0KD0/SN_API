@@ -50,7 +50,7 @@ module.exports = {
   // Add a friend
   addFriend(req, res) {
     User.findOneAndUpdate({ _id: req.params.userId }, { $push: { friends: req.params.friendId } }, { new: true })
-        .then((user) => res.json(user))
+        .then((user) => res.json({ message: 'Friend has been added'}))
         .catch((err) => res.status(500).json(err));
   },
 

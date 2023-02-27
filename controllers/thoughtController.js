@@ -19,7 +19,7 @@ module.exports = {
       )
       .catch((err) => res.status(500).json(err));
   },
-  
+
   // Create a thought
   createThought(req, res) {
     Thought.create(req.body)
@@ -68,8 +68,6 @@ module.exports = {
     console.log(req.params.thoughtId, req.params.reactionId)
     Thought.updateOne({ _id: req.params.thoughtId }, { $pull: { reactions: {_id: req.params.reactionId} } }, { new: true })
     .then(() => res.json({ message: 'Reaction has been deleted' }))
-        .catch((err) => {
-            res.status(500).json(err)
-        });
+    .catch((err) => {res.status(500).json(err)});
   }
 };
