@@ -4,7 +4,7 @@ This is an API for social network web application where users can share their th
 
 ## Walkthrough Video
 Walkthrough video can be checked from the following link:
-
+https://drive.google.com/file/d/1voP20-RPzexEe4sK3eL3hWTQPnF7gc4r/view?usp=share_link
 
 ## Instruction
 Follow following process after download this repo:
