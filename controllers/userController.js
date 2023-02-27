@@ -1,4 +1,4 @@
-const { User, User, } = require('../models');
+const { User, Thought } = require('../models');
 
 module.exports = {
   // Get all users
@@ -40,17 +40,21 @@ module.exports = {
         .catch((err) => res.status(500).json(err));
   },
 
-  // Update a user -- check if this is needed
+  // Update a user
   updateUser(req, res) {
     User.findOneAndUpdate({ _id: req.params.userId }, req.body, { new: true })
         .then((user) => res.json(user))
         .catch((err) => res.status(500).json(err));
   },
+
+  // Add a friend
   addFriend(req, res) {
     User.findOneAndUpdate({ _id: req.params.userId }, { $push: { friends: req.params.friendId } }, { new: true })
         .then((user) => res.json(user))
         .catch((err) => res.status(500).json(err));
   },
+
+  // Delete a friend
   deleteFriend(req, res) {
     User.updateOne({ _id: req.params.userId }, { $pull: { friends: req.params.friendId } }, { new: true })
         .then(() => res.json({ message: 'Friend has been deleted'}))
