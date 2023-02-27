@@ -2,17 +2,15 @@
 ## Description
 This is an API for social network web application where users can share their thoughts, react to friends' thoughts, and create a friend list. 
 
-## Screenshot
-
 ## Walkthrough Video
 Walkthrough video can be checked from the following link:
 
 
 ## Instruction
-Follow following process:
-1. 
-2. 
-3. 
+Follow following process after download this repo:
+1. npm i
+2. node indes.js
+3. Run Insomnia to test GET, POST, PUT, DELETE routes
 
 ## Softwares used
 * VS Code
@@ -20,3 +18,4 @@ Follow following process:
 * Insomnia
 
 ## Reference
+Bootcamp class material - 18-NoSQL/01-Activities/28-Stu_Mini-Project
